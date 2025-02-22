@@ -6,6 +6,39 @@
 chrome.exe --ruyi="[指纹参数JSON]" --user-agent="[UA字符串]" --lang=[语言] --time-zone-for-testing=[时区] --user-data-dir="[用户目录]"
 ```
 
+### Windows系统下的完整启动示例
+
+```batch:start.bat
+@echo off
+REM 读取JSON文件内容到变量
+set /p params=<..\..\fingerprint.json
+REM 使用JSON内容启动浏览器
+.\chrome.exe --ruyi="%params%" --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.0 Safari/537.36" --lang=zh-CN --time-zone-for-testing=Asia/Shanghai --user-data-dir="./UserData"
+```
+
+### 创建启动批处理文件
+为了方便使用，建议创建一个批处理文件（start.bat）：
+
+```batch:start.bat
+@echo off
+set /p params=<fingerprint.json
+"G:\GITHUB_MY_project\Fingerprint-browser-\Chromium\chrome-win\chrome.exe" --ruyi="G:\GITHUB_MY_project\Fingerprint-browser-\fingerprint.json" --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.0 Safari/537.36" --lang=zh-CN --time-zone-for-testing=Asia/Shanghai --user-data-dir="./UserData"
+```
+
+这样你只需要双击 start.bat 文件就可以启动浏览器了。
+
+### 启动参数说明
+- `--ruyi`: 指纹参数JSON字符串
+- `--user-agent`: 自定义UA
+- `--lang`: 浏览器语言
+- `--time-zone-for-testing`: 时区设置
+- `--user-data-dir`: 用户数据目录（建议使用相对或绝对路径）
+
+### 注意事项
+1. 路径中如果包含空格，需要用双引号包裹
+2. 建议将用户数据目录（UserData）放在一个固定的位置
+3. 可以创建批处理文件(.bat)来简化启动过程
+
 ## 指纹参数详细说明
 
 ### 1. 网络相关参数

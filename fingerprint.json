@@ -1,0 +1,117 @@
+{
+  "post": "Ruyi Education",
+  "portScan": {
+    "enable": "no"
+  },
+  "canvas": {
+    "noise": 1.5
+  },
+  "webrtc": {
+    "public": "108.181.23.241",
+    "private": "108.181.23.241",
+    "force_relay": true,
+    "disable_ice": true,
+    "only_relay": true,
+    "ip_handling_policy": "disable",
+    "peer_connection": "disabled",
+    "ice_servers": [],
+    "media_devices": "disabled",
+    "stun_servers": [],
+    "turn_servers": []
+  },
+  "position": {
+    "longitude": -118.1733,
+    "latitude": 34.0436,
+    "altitude": 71.0,
+    "accuracy": 15.8
+  },
+  "webgl": {
+    "vendor": "Google Inc.",
+    "renderer": "ANGLE (NVIDIA GeForce GTX 1060 Direct3D11 vs_5_0 ps_5_0)"
+  },
+  "gpu": {
+    "device": "NVIDIA GeForce GTX 1060",
+    "description": "NVIDIA GeForce GTX 1060 with Max-Q Design"
+  },
+  "webaudio": 44.1,
+  "clientrect": {
+    "x": 0,
+    "y": 0
+  },
+  "screen": {
+    "width": 1366.0,
+    "height": 768.0,
+    "colorDepth": 24.0,
+    "availWidth": 1366.0,
+    "availHeight": 728.0
+  },
+  "mobile": {
+    "touchsupport": 0
+  },
+  "hardware": {
+    "concurrency": 4.0,
+    "memory": 8.0
+  },
+  "clientHint": {
+    "platform": "Windows",
+    "platform_version": "10.0.19045",
+    "ua_full_version": "96.0.4654.0",
+    "mobile": "?0",
+    "architecture": "x64",
+    "bitness": "64",
+    "model": "",
+    "full_version_list": "Edge;96.0.4654.0"
+  },
+  "languages": {
+    "js": "en-US,en",
+    "http": "en-US,en;q=0.9"
+  },
+  "software": {
+    "cookie": "yes",
+    "java": "no",
+    "dnt": "yes"
+  },
+  "font": {
+    "removefont": "Segoe UI Historic,Segoe UI Symbol"
+  },
+  "timezone": {
+    "offset": -480,
+    "id": "America/Los_Angeles"
+  },
+  "plugins": {
+    "count": 5,
+    "hash": "e8f6d7c5",
+    "list": [
+      "PDF Viewer",
+      "Chrome PDF Viewer",
+      "Chromium PDF Viewer",
+      "Microsoft Edge PDF Viewer",
+      "WebKit built-in PDF"
+    ]
+  },
+  "media": {
+    "video": ["video/mp4", "video/webm"],
+    "audio": ["audio/mpeg", "audio/ogg"]
+  },
+  "dns": {
+    "resolver": "proxy",
+    "block_webrtc": true
+  },
+  "location": {
+    "postal_code": "90022",
+    "city": "Los Angeles",
+    "region": "California",
+    "country": "US"
+  },
+  "extensions": {
+    "count": 3,
+    "list": [
+      "Microsoft Editor",
+      "Microsoft Defender SmartScreen",
+      "Windows 10 accounts"
+    ]
+  },
+  "proxy": {
+    "server": "http://127.0.0.1:10808"
+  }
+}
