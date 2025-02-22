@@ -1,2 +1,4 @@
 # 使用相对路径忽略 Chromium 文件夹
-Chromium/ 
+Chromium/
+# 或者使用这种写法也可以
+/Chromium/** 
